@@ -1,0 +1,14 @@
+.header__container {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+
+    padding: 1.5em;
+}
+
+.header__title {
+    color: var(--white-f);
+    font-size: 1.2em;
+    text-transform: uppercase;
+}

@@ -1,0 +1,58 @@
+.statement__section {
+    padding: 2em;
+    margin: 1em 0;
+    width: 65%;
+    background-color: var(--grey-bg);
+}
+
+.statement__title {
+    text-align: start;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+.statement__spans {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 0.7em;
+    color: var(--light-grey-bg);
+    padding: 2.3em 0 0 0;
+}
+
+.statement {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1em;
+    padding: 0.6em 1em 1em 0;
+    width: 100%;
+    overflow-x: scroll;
+    transition: ease-out .2s;
+}
+
+.statement__line {
+    padding: 2em;
+    border-radius: 10px;
+}
+
+.statement__line-welcome {
+    font-size: 0.9em;
+    padding: 2em;
+    border-radius: 10px;
+    border: 3px solid var(--border-blue);
+    min-width: 25.8em;
+    max-height: 2em;
+}
+
+.statement::-webkit-scrollbar {
+    height: 13px;
+    background-color: var(--grey-bg);
+}
+
+.statement::-webkit-scrollbar-track:active {
+    background-color: var(--light-grey);
+}
+
+.statement::-webkit-scrollbar-thumb {
+    background-color: var(--dark-bg);
+}

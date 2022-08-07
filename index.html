@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Seu Bolso | Deshboard</title>
+
+    <link rel="stylesheet" href="styles/CSS/reset.css">
+    <link rel="stylesheet" href="styles/CSS/base.css">
+    <link rel="stylesheet" href="styles/CSS/header.css">
+    <link rel="stylesheet" href="styles/CSS/deshboard.css">
+    <link rel="stylesheet" href="styles/CSS/form.css">
+    <link rel="stylesheet" href="styles/CSS/statement.css">
+    <link rel="stylesheet" href="styles/CSS/balance.css">
+    <script src="https://kit.fontawesome.com/7df7c09821.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__title">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+                Cuide do seu dinheiro
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="balance__section">
+            <div class="balance__container">
+                <div class="balance__group balance__group-balance">
+                    <h2 class="balance__title"><i class="fa-solid fa-building-columns"></i>Seu saldo</h2>
+                    <button type="button" class="balance__btn" id="btn__balance"><i class="fa-solid fa-arrows-rotate"></i></button>
+                    <div class="balance__number balance__number-balance">
+                        <span id="BRL">R$</span>
+                        <span id="balance">0</span>
+                    </div>
+                </div>
+    
+                <div class="balance__group balance__group-payment">
+                    <h2 class="balance__title"><i class="fa-solid fa-chart-line"></i>Ganhos totais do mês</h2>
+                    <div class="balance__number balance__number-payment">
+                        <span id="BRL">R$</span>
+                        <span id="payment">0</span>
+                    </div>
+                </div>
+    
+                <div class="balance__group balance__group-expenses">
+                    <h2 class="balance__title"><i class="fa-solid fa-chart-gantt"></i>Gastos totais do mês</h2>
+                    <div class="balance__number balance__number-expenses">
+                        <span id="BRL">R$</span>
+                        <span id="expend">0</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="money-deshboard__section">
+            <section class="form__section">
+                <div class="form__container">
+                    <div class="form__group" id="form__group-gains">
+                        <label for="input__gains" class="form__label label__ganho">Recebeu?</label>
+                        <form class="form__group-input" id="form__gains">
+                            <i class="fa-solid fa-money-bill-1"></i>
+                            <input type="number" id="input__gains" name="input__gains" class="form__input form__input-gains" placeholder="Ganhou quantos?">
+                            <button type="submit" id="btn__gains" class="form__btn"><i class="fa-solid fa-angles-right"></i></button>
+                        </form>
+                        <div class="error__form-gains">
+                            <!--Aqui sera criado mensagens de erro dinamicamente pelo JS-->
+                        </div>
+                    </div>
+    
+                    <div class="form__group" id="form__group-expend">
+                        <label for="input__expend" class="form__label label__gastos">Gastou?</label>
+                        <form class="form__group-input" id="form__expends">
+                            <i class="fa-solid fa-car-burst"></i>
+                            <input type="number" id="input__expend" name="input__expend" class="form__input form__input-expend" placeholder="Gastou quantos?">
+                            <button type="submit" id="btn__gains" class="form__btn"><i class="fa-solid fa-angles-right"></i></button>
+                        </form>
+                        <div class="error__form-expend">
+                            <!--Aqui sera criado mensagens de erro dinamicamente pelo JS-->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="statement__section">
+                <h2 class="statement__title"><i class="fa-solid fa-cash-register"></i>Extrato</h2>
+                <div class="statement__spans">
+                    <span class="statement__span-text">Mais recentes</span>
+                    <span class="statement__span-text">Mais antigos</span>
+                </div>
+                <div class="statement__container">
+                    <ul class="statement">
+                        <li class="statement__line-welcome">Bem-vindo ao SeuBolso, aqui ficará seu extrato!
+                        <i class="fa-solid fa-xmark" id="statement__line-welcome--delete"></i></li>
+                        <!--Aqui fica os itens criados direto do JS-->
+                    </ul>
+                </div>
+            </section>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

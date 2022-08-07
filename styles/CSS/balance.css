@@ -1,0 +1,40 @@
+.balance__section {
+    background-color: var(--grey-bg);
+    padding: 1em;
+
+}
+
+.balance__container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.balance__group {
+    text-align: center;
+    padding: 1em;
+
+    border-top: 1px solid;
+}
+
+.balance__group-balance {border-color: var(--border-orange);}
+.balance__group-payment {border-color: var(--border-green);}
+.balance__group-expenses{border-color: var(--border-red);}
+
+.balance__title {
+    margin-bottom: 10px;
+}
+
+.balance__btn {
+    background-color: transparent;
+    border: none;
+    padding: 0 0 10px 0;
+
+    color: var(--white-f);
+    font-size: 0.9em;
+
+    cursor: pointer;
+}
+
+.balance__number-balance {color: var(--border-orange);}
+.balance__number-payment {color: var(--border-green);}   
+.balance__number-expenses {color: var(--border-red);}   

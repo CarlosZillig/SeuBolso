@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+    /*Backgrounds colors*/
+    --light-grey-bg: #c9c9c9;
+    --dark-bg: #0F0F0F;
+    --grey-bg: #2a2b2b6e;
+
+    /*Font colors*/
+    --white-f: #FBFBFB;
+    --black-f: #000;
+
+    /*Fonts*/
+    --font-inter: 'Inter', sans-serif;
+
+    /*Borders*/
+    --border-green:#309123;
+    --border-red: #F71735;
+    --border-orange:rgb(255, 187, 0);
+    --border-blue: rgb(2, 103, 255);
+
+    /*Hover colors*/
+    --green-h: #276b1e;
+    --blue-h: rgb(3, 68, 167);
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: var(--white-f);
+    font-family: var(--font-inter);
+    font-weight: 400;
+    padding: 1em;
+    max-width: 100vw;
+}
+
+.statement__green {
+    border: 3px solid var(--border-green);
+}
+
+.statement__red {
+    border: 3px solid var(--border-red);
+}
+
+/*Estilizando os icones*/
+.fa-solid {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.fa-xmark {
+    font-size: 0.8em;
+    background-color: var(--border-red);
+    padding: 0.2em 0.5em;
+
+    cursor: pointer;
+}
+
+.error__message {
+    color: var(--border-red);
+    font-size: 0.8em;
+}
