@@ -4,6 +4,8 @@
 <p>Deshboard para registrar seus ganhos e gastos, e assim ter mais controle ao seu dinheiro.</p>
 <span>Fiz esse site apenas para práticar meu JavaScript, logo todo o resto deve ser desconsiderado</span>
 
+<h3>STATUS: Desenvolvimento</h3>
+
 <h4>Tecnologias que usei:</h4>
 <ul>
   <li>HTML</li>
